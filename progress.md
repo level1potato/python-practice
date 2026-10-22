@@ -1,15 +1,44 @@
-I'm a recent IT grad working toward an in-demand, AI-resilient IT career
-for both the Philippines and Japan. Plan: first job in IT support/QA,
-then cloud engineering. I'm taking the PhilNITS FE exam in April 2027.
+# Progress
 
-Setup: Windows with WSL2 (Ubuntu), VS Code, Git/GitHub (repo: python-practice).
+## Goal
+Build skills for an IT career (cloud engineering path) and prepare for
+the PhilNITS FE exam (April 2027).
 
-Done so far: Linux basics (cd, ls, mkdir, cp, mv, rm, nano), Python loops,
-conditionals and functions (largest, smallest, sum, count_evens,
-count_vowels, reverse_text), Git add/commit/push.
+## Done
 
-Next: New problem: palindrome check and Linux: file permissions
+### Day 1 (Oct 18)
+- Set up WSL2 + Ubuntu, connected VS Code to Linux
+- Linux: pwd, ls, cd, mkdir, cp, mv, rm, echo, cat
+- Python: loops, wrote find_largest with an empty-list check
 
-How to teach me: small exercises, recall tasks without peeking, hints
-instead of full answers, and I send my code for review. Ask me to
-explain my mistakes in my own words.
+### Day 2 (Oct 19)
+- Python: find_smallest, find_sum, count_evens
+- Git: init, add, commit, push; created GitHub repo and README
+
+### Day 3 (Oct 20)
+- Recalled find_largest from memory
+- count_vowels (the `in` operator, `.lower()`)
+- Linux: nano basics
+
+### Day 4 (Oct 21)
+- Recalled count_vowels from memory
+- reverse_text (loop version and `[::-1]`)
+
+### Day 5 (Oct 22)
+- Recalled find_smallest from memory
+- is_palindrome; how True/False values work
+- Linux permissions: ls -l, chmod with letters and numbers (755, 644, 600)
+
+## Lessons learned
+- Indentation decides what is inside a loop or `if`; `return` goes after the loop
+- `=` stores a value, `==` compares; `print` shows, `return` gives back
+- A loop variable is one item, the list is the whole thing
+- One passing test isn't enough, so test start, middle, end, and empty cases
+
+## Next
+- Weekly recall exercises without peeking
+- New Python problems: count words in a sentence, remove duplicates, FizzBuzz
+- Linux: less, head, tail, grep
+- Networking basics: IP, DNS, ports, ping
+- First PhilNITS FE past paper
+- Later: AWS Cloud Practitioner
