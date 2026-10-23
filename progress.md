@@ -29,16 +29,23 @@ the PhilNITS FE exam (April 2027).
 - is_palindrome; how True/False values work
 - Linux permissions: ls -l, chmod with letters and numbers (755, 644, 600)
 
+### Day 6 (Oct 23)
+- Recalled count_evens from memory
+- count_words (`.split()` turns text into a list)
+
 ## Lessons learned
 - Indentation decides what is inside a loop or `if`; `return` goes after the loop
 - `=` stores a value, `==` compares; `print` shows, `return` gives back
 - A loop variable is one item, the list is the whole thing
 - One passing test isn't enough, so test start, middle, end, and empty cases
+- Methods need parentheses: `.lower()`, not `.lower`
 
 ## Next
 - Weekly recall exercises without peeking
-- New Python problems: count words in a sentence, remove duplicates, FizzBuzz
+- New Python problems: remove duplicates, FizzBuzz, find the second largest
+- SQL basics (SQLBolt, 20-30 min a few days a week)
 - Linux: less, head, tail, grep
 - Networking basics: IP, DNS, ports, ping
 - First PhilNITS FE past paper
+- Around week 4: JavaScript taste test (one small web page)
 - Later: AWS Cloud Practitioner
