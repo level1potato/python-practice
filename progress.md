@@ -33,19 +33,33 @@ the PhilNITS FE exam (April 2027).
 - Recalled count_evens from memory
 - count_words (`.split()` turns text into a list)
 
+### Day 7 (Oct 24)
+- Recalled find_sum from memory
+- FizzBuzz: `range()`, `elif`, `.append()`, returning a list
+- Made fizzbuzz take a list or range as input
+
 ## Lessons learned
 - Indentation decides what is inside a loop or `if`; `return` goes after the loop
 - `=` stores a value, `==` compares; `print` shows, `return` gives back
+- `return` exits the function immediately, so collect results in a list first
 - A loop variable is one item, the list is the whole thing
+- Put the most specific check first in an `if`/`elif` chain
+- A calculation needs `=`, `+=`, or `.append()` to save its result
 - One passing test isn't enough, so test start, middle, end, and empty cases
 - Methods need parentheses: `.lower()`, not `.lower`
 
+## Daily rhythm
+- Python: 45-60 min (one recall exercise + one new problem)
+- Linux: 20-30 min (one small topic)
+- Rotating through the week: FE past paper, SQL, job listings
+- Review the balance weekly; shift toward Linux/networking once writing
+  Python feels comfortable
+
 ## Next
-- Weekly recall exercises without peeking
-- New Python problems: remove duplicates, FizzBuzz, find the second largest
-- SQL basics (SQLBolt, 20-30 min a few days a week)
-- Linux: less, head, tail, grep
-- Networking basics: IP, DNS, ports, ping
+- Recall exercises without peeking, rotating through older functions
+- New Python problems: remove duplicates, find the second largest
+- Linux, in order: less/head/tail, grep, pipes, networking (ping, ip addr, DNS), apt and ps/top
 - First PhilNITS FE past paper
+- SQL basics (SQLBolt, 20-30 min a few days a week)
 - Around week 4: JavaScript taste test (one small web page)
 - Later: AWS Cloud Practitioner
