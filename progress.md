@@ -38,28 +38,35 @@ the PhilNITS FE exam (April 2027).
 - FizzBuzz: `range()`, `elif`, `.append()`, returning a list
 - Made fizzbuzz take a list or range as input
 
+### Day 8 (Oct 25)
+- Recalled count_vowels again (fixed the `in` direction and the missing loop)
+- remove_duplicates (`not in`, checking against the new list)
+- Linux: seq, head, tail, less, and my first pipe (`head | tail`)
+
 ## Lessons learned
 - Indentation decides what is inside a loop or `if`; `return` goes after the loop
 - `=` stores a value, `==` compares; `print` shows, `return` gives back
 - `return` exits the function immediately, so collect results in a list first
 - A loop variable is one item, the list is the whole thing
+- In `x in y`, the single item goes on the left and the group on the right
 - Put the most specific check first in an `if`/`elif` chain
 - A calculation needs `=`, `+=`, or `.append()` to save its result
 - One passing test isn't enough, so test start, middle, end, and empty cases
 - Methods need parentheses: `.lower()`, not `.lower`
+- A pipe `|` sends one command's output into the next command
 
 ## Daily rhythm
 - Python: 45-60 min (one recall exercise + one new problem)
-- Linux: 20-30 min (one small topic)
-- Rotating through the week: FE past paper, SQL, job listings
+- Linux: 20-30 min (start with a 5-min recall from memory, then one new topic)
+- Rotating through the week: SQL, job listings
 - Review the balance weekly; shift toward Linux/networking once writing
   Python feels comfortable
 
 ## Next
 - Recall exercises without peeking, rotating through older functions
-- New Python problems: remove duplicates, find the second largest
-- Linux, in order: less/head/tail, grep, pipes, networking (ping, ip addr, DNS), apt and ps/top
-- First PhilNITS FE past paper
+- New Python problems: find the second largest
+- Linux, in order: grep, pipes in more depth, networking (ping, ip addr, DNS), apt and ps/top
 - SQL basics (SQLBolt, 20-30 min a few days a week)
+- PhilNITS FE past paper: around mid-November, just 10 questions to see which topics need work
 - Around week 4: JavaScript taste test (one small web page)
 - Later: AWS Cloud Practitioner
