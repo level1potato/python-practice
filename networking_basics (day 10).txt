@@ -1,0 +1,27 @@
+# Networking basics (Day 10)
+
+## Commands
+- `ip addr`: show network interfaces and their IP addresses
+- `ping -c 4 <target>`: send 4 test packets to a machine and see if it answers
+  (`-c 4` stops after 4; without it, ping runs until Ctrl+C)
+- `cat /etc/resolv.conf`: shows which DNS server the system asks
+
+## Concepts
+- **IP address**: the address a machine uses on a network (example: 172.31.51.3)
+- **localhost / loopback (127.0.0.1)**: the computer talking to itself
+- **Interfaces**: `lo` is loopback; `eth0` is the connection to the network
+- **Subnet (/20)**: describes how big the network is that an address belongs to
+- **Private addresses** (used inside local networks, not reachable from the internet):
+  - 10.0.0.0 to 10.255.255.255
+  - 172.16.0.0 to 172.31.255.255
+  - 192.168.0.0 to 192.168.255.255
+  - Anything outside these ranges is public (e.g. 8.8.8.8, 172.217.x.x)
+- **Latency**: how long a packet takes to get a reply (`time=` in ping; my tests: ~0.03 ms
+  to localhost, ~7 ms to Google)
+- **Packet loss**: percentage of pings that got no reply (0% is healthy)
+- **DNS**: turns names (google.com) into IP addresses, like a phone book
+
+## Troubleshooting ladder
+1. `ping localhost` fails -> the computer's own networking is broken
+2. `ping 8.8.8.8` fails -> no connection to the internet
+3. `ping google.com` fails but step 2 works -> DNS problem
