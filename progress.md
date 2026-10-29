@@ -62,11 +62,19 @@ the PhilNITS FE exam (April 2027).
 - word_counts: my first dictionary (`in` checks keys, `counts[word] += 1`)
 - Linux: apt install, tree, ps, top, and `ps aux | grep` to find a process
 
+### Day 12 (Oct 29)
+- Linux recall: head/tail range, grep -n, ping -c (needed hints on the exact options)
+- Peeked at longest_word, then worked through split(), for, and len() with
+  small experiments until they made sense
+- most_common (dictionary counts plus a "champion" loop; `counts[word] > counts[common]`)
+- Linux ports: `ss -tln`, ran a tiny web server with `python3 -m http.server 8000`
+
 ## Lessons learned
 - Indentation decides what is inside a loop or `if`; `return` goes after the loop
 - `=` stores a value, `==` compares; `print` shows, `return` gives back
 - `return` exits the function immediately, so collect results in a list first
 - A loop variable is one item, the list is the whole thing
+- `len()` counts the items directly inside what I give it (a list of 4 words is 4, not letters)
 - In `x in y`, the single item goes on the left and the group on the right
 - Starting values should come from the same collection you're about to loop over
 - Comparing words with `<` is alphabetical; use `len()` to compare lengths
@@ -74,13 +82,16 @@ the PhilNITS FE exam (April 2027).
 - A calculation needs `=`, `+=`, or `.append()` to save its result
 - One passing test isn't enough, so test start, middle, end, and empty cases
 - Methods need parentheses: `.lower()`, not `.lower`
-- A dictionary is key/value pairs; `in` checks the keys
+- A dictionary is key/value pairs; `dictionary[key]` gives the value, `in` checks the keys
+- Square brackets look things up; curly braces create a dictionary
 - `chmod MODE FILE`: the mode is one word with no spaces
 - `>` sends a command's output into a file; `rm` is for files, `rmdir` / `rm -r` for directories
 - `d` at the start of `ls -l` means directory
 - A pipe `|` sends one command's output into the next command
 - `grep` finds the lines that matter; `ps aux | grep name` checks if a program is running
 - Network troubleshooting ladder: localhost, then IP, then name (DNS)
+- A port is a numbered door where a program listens; `ss -tln` lists what is listening
+- Tracing code by hand (or with a temporary print) is how confusing lines become clear
 - Forgot my sudo password once; keep it somewhere private (not in this repo)
 
 ## Daily rhythm
@@ -91,10 +102,10 @@ the PhilNITS FE exam (April 2027).
   Python feels comfortable
 
 ## Next
-- Recall exercises without peeking, rotating through older functions
+- Recall exercises without peeking, rotating through older functions (esp. split, len, dictionaries)
 - Linux notes file (linux-notes.md) in my own words
-- Linux, in order: more networking (ports, traceroute), environment variables, basic shell scripts
-- New Python problems: word counts that ignore capitals, find the most common word
+- Linux, in order: environment variables, basic shell scripts, traceroute
+- New Python problems: word counts that ignore capitals, handle the empty sentence
 - SQL basics (SQLBolt, 20-30 min a few days a week)
 - PhilNITS FE past paper: around mid-November, just 10 questions to see which topics need work
 - Around week 4: JavaScript taste test (one small web page)
