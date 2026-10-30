@@ -69,6 +69,13 @@ the PhilNITS FE exam (April 2027).
 - most_common (dictionary counts plus a "champion" loop; `counts[word] > counts[common]`)
 - Linux ports: `ss -tln`, ran a tiny web server with `python3 -m http.server 8000`
 
+### Day 13 (Oct 30)
+- Linux recall: web server on port 8000, `ss -tln` before and during, `ps aux | grep bash`
+- Recalled word_counts from a blank file
+- Improved most_common: lowercase the sentence before splitting, return "" for empty input
+- Linux: environment variables (`$HOME`, `$USER`, `export`), my first shell script (greet.sh),
+  quoting rules, the PATH variable
+
 ## Lessons learned
 - Indentation decides what is inside a loop or `if`; `return` goes after the loop
 - `=` stores a value, `==` compares; `print` shows, `return` gives back
@@ -82,15 +89,19 @@ the PhilNITS FE exam (April 2027).
 - A calculation needs `=`, `+=`, or `.append()` to save its result
 - One passing test isn't enough, so test start, middle, end, and empty cases
 - Methods need parentheses: `.lower()`, not `.lower`
+- Lowercase text before splitting or counting, so capitals don't count as different words
 - A dictionary is key/value pairs; `dictionary[key]` gives the value, `in` checks the keys
 - Square brackets look things up; curly braces create a dictionary
 - `chmod MODE FILE`: the mode is one word with no spaces
 - `>` sends a command's output into a file; `rm` is for files, `rmdir` / `rm -r` for directories
 - `d` at the start of `ls -l` means directory
 - A pipe `|` sends one command's output into the next command
-- `grep` finds the lines that matter; `ps aux | grep name` checks if a program is running
+- `grep` with no file or pipe waits for keyboard input (Ctrl+C to leave)
+- `ps aux | grep name` checks if a program is running
 - Network troubleshooting ladder: localhost, then IP, then name (DNS)
 - A port is a numbered door where a program listens; `ss -tln` lists what is listening
+- Shell variables: `NAME=value` (no spaces), `$NAME` reads it, `export` shares it with programs
+- Double quotes keep spaces and expand `$VAR`; single quotes are literal; no quotes splits at spaces
 - Tracing code by hand (or with a temporary print) is how confusing lines become clear
 - Forgot my sudo password once; keep it somewhere private (not in this repo)
 
@@ -102,11 +113,11 @@ the PhilNITS FE exam (April 2027).
   Python feels comfortable
 
 ## Next
-- Recall exercises without peeking, rotating through older functions (esp. split, len, dictionaries)
+- Start SQL (SQLBolt first lessons) and a first look at IT support/QA job listings
+- Recall exercises without peeking, rotating through older functions (split, len, dictionaries)
 - Linux notes file (linux-notes.md) in my own words
-- Linux, in order: environment variables, basic shell scripts, traceroute
-- New Python problems: word counts that ignore capitals, handle the empty sentence
-- SQL basics (SQLBolt, 20-30 min a few days a week)
+- Linux: scripts with arguments (`$1`) and a simple `if`, traceroute
+- New Python problems: anagrams (`sorted(a) == sorted(b)`), most common with ties
 - PhilNITS FE past paper: around mid-November, just 10 questions to see which topics need work
 - Around week 4: JavaScript taste test (one small web page)
 - Later: AWS Cloud Practitioner
